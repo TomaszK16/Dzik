@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Poppins;
+    font-weight: 500;
+    src: url('/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 600;
+    src: url('/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 700;
+    src: url('/fonts/Poppins-Bold.ttf');
+}
+
+html, body {
+    height: 100%;
+    font-family: Poppins;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(109%);
+}
+
+body {
+    margin: 0;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+
+#mainMenu {
+    width: 50vw;
+    height: 300px;
+    border-radius: 15px;
+    background-color: gainsboro;
+
+    padding: 3rem;
+
+    display: flex;
+    /* display: none; */
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    #text h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    #text span {
+        font-size: 1.2rem;
+    }
+
+    #buttons {
+        width: 100%;
+        gap: 10px;
+        display: flex;
+    }
+
+    #mainMenu button {
+        flex: 1;
+        height: 100px;
+
+        font-size: 1.2rem;
+        font-weight: 700;
+        font-family: Poppins;
+
+        transition: transform 0.05s ease-in-out;
+    }
+
+
+    button#easy{
+        border-radius: 10px 0 0 10px;
+        background-color: #1fdb74;
+    }
+
+    button#medium{
+        background-color: #f5b75a;
+    }
+
+    button#hard{
+        background-color: #fe5e41;
+    }
+
+    button#goat{
+        border-radius: 0 10px 10px 0;
+        color: white;
+        background-color: black;
+    }
+
+#game {
+    display: none;
+    /* display: flex;  */
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 400px;
+
+    padding: 2rem;
+}
+
+    #countup {
+        font-size: 16rem
+    }
+
+    #dzik {
+        padding: 5rem;
+        
+        border-radius: 10px;
+        background-color: gainsboro;
+
+        font-size: 8rem;
+    }
+
+    #dzik:hover{
+        filter: brightness(90%);
+    }
+
+    #dzik:active {
+        transform: scale(100%);
+    }
