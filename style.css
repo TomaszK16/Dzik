@@ -27,7 +27,7 @@ button {
 }
 
 button:hover{
-    transform: scale(109%);
+    transform: scale(105%);
 }
 
 body {
@@ -42,16 +42,17 @@ body {
 #mainMenu {
     width: 50vw;
     height: 300px;
-    border-radius: 15px;
-    background-color: gainsboro;
-
     padding: 3rem;
 
     display: flex;
     /* display: none; */
-
     flex-direction: column;
     justify-content: space-between;
+
+    background-color: gainsboro;
+    box-shadow: -10px -10px 0px #ccc;
+    border: solid 5px #d6d6d6;
+    border-radius: 15px;
 }
 
     #text h1 {
@@ -65,7 +66,7 @@ body {
 
     #buttons {
         width: 100%;
-        gap: 10px;
+        gap: 0px;
         display: flex;
     }
 
@@ -83,21 +84,25 @@ body {
 
     button#easy{
         border-radius: 10px 0 0 10px;
-        background-color: #1fdb74;
+        background-color: #2bdd66;
+        border: solid 5px #30d166;
     }
 
     button#medium{
-        background-color: #f5b75a;
+        background-color: #ffbe3b;
+        border: solid 5px #e1ad44;
     }
 
     button#hard{
-        background-color: #fe5e41;
+        background-color: #f15c33;
+        border: solid 5px #cf512e;
     }
 
     button#goat{
         border-radius: 0 10px 10px 0;
         color: white;
-        background-color: black;
+        background-color: #000000;
+        border: solid 5px #1d1d1d;
     }
 
 #game {
@@ -127,7 +132,7 @@ body {
     }
 
     #dzik:hover{
-        filter: brightness(90%);
+        filter: brightness(105%);
     }
 
     #dzik:active {
