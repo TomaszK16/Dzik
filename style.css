@@ -21,6 +21,10 @@ html, body {
     font-family: Poppins;
 }
 
+h1{
+    margin: 0;
+}
+
 button {
     border: none;
     cursor: pointer;
@@ -40,8 +44,7 @@ body {
 }
 
 #mainMenu {
-    width: 50vw;
-    height: 300px;
+    width: 1000px;
     padding: 3rem;
 
     display: flex;
@@ -55,14 +58,18 @@ body {
     border-radius: 15px;
 }
 
-    #text h1 {
-        font-size: 3rem;
-        margin: 0;
-    }
+.text {
+    padding-bottom: 1rem;
+}
 
-    #text span {
-        font-size: 1.2rem;
-    }
+.text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.text li {
+    font-size: 1.2rem;
+}
 
     #buttons {
         width: 100%;
@@ -106,6 +113,7 @@ body {
     }
 
 #game {
+    
     display: none;
     /* display: flex;  */
 
@@ -116,6 +124,7 @@ body {
     width: 400px;
 
     padding: 2rem;
+    margin-top: -4rem;
 }
 
     #countup {
@@ -137,4 +146,74 @@ body {
 
     #dzik:active {
         transform: scale(100%);
+    }
+
+#endGame {
+    position: absolute;
+
+    width: 50vw;
+    padding: 1.5rem;
+
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+
+    background-color: gainsboro;
+    border: solid 5px #d6d6d6;
+    border-radius: 15px;
+}
+
+    #scores{
+        display: flex;
+        gap: 5rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    #scores * {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #scores * * {
+        font-size: 3.5rem;
+    }
+
+    #endGame h1 {
+        font-size: 5rem;
+    }
+
+    #endButtons {
+        width: 100%;
+        gap: 0px;
+        display: flex;
+    }
+
+    #endButtons * {
+        flex: 1;
+        height: 80px;
+
+        font-size: 1.2rem;
+        font-weight: 700;
+        font-family: Poppins;
+
+        transition: transform 0.05s ease-in-out;
+    }
+
+    #tryAgain {
+        background-color: #ffbe3b;
+        border: solid 5px #e1ad44;
+
+        border-radius: 10px 0 0 10px;
+    }
+
+    #returnToMenu {
+        background-color: #f15c33;
+        border: solid 5px #cf512e;
+
+        border-radius: 0 10px 10px 0;
     }

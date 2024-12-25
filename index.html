@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt1</title>
+    <title>Dzik</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div id="mainMenu">
-        <div id="text">
+        <div class="text">`
             <h1>Dzik.</h1>
-            <span>Opis dzika lorem ipsum solor niepamietam tego gówna</span>
+            <ul>
+                <li>Zobaczysz kolejne liczby, zaczynając od jedynki</li>
+                <li>Kliknij ikonkę dzika, jeśli liczba będzie podzielna przez 7 lub będzie zawierała liczbę 7</li>
+                <li>Przegrasz jeśli nie klikniesz w porę lub klikniesz na nieodpowiedniej liczbie</li>
+                <li>Powodzenia!</li>
+            </ul>
         </div>
         <div id="buttons">
             <button id="easy" class="mode">Easy</button>
@@ -23,6 +28,17 @@
     <div id="game">
         <div id="countup">1</div>
         <button id="dzik">🐗</button>
+    </div>
+    <div id="endGame">
+        <h1>Przegrałeś!</h1>
+        <div id="scores">
+            <span id="currentScoreText">Twój wynik:<span id="currentScore"> </span></span>
+            <span id="highScoreText">Najlepszy wynik:<span id="highScore"> </span></span>
+        </div>
+        <div id="endButtons">
+            <button id="tryAgain">Spróbuj ponownie</button>
+            <button id="returnToMenu">Powróć do menu</button>
+        </div>
     </div>
 
     <script src="./script.js"></script>
